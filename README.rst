@@ -1,26 +1,29 @@
 Cookiecutter-Django Set up
 ==========================
 
+Set up::
 
-$ curl https://raw.githubusercontent.com/mitsuhiko/pipsi/master/get-pipsi.py | python
+    $ curl https://raw.githubusercontent.com/mitsuhiko/pipsi/master/get-pipsi.py | python
 
-# It looks like ~/.local/bin/ is not on your PATH?
+    # It looks like ~/.local/bin/ is not on your PATH?
 
-$ echo PATH=~/.local/bin/:$PATH >> ~/.bashrc
+    $ echo PATH=~/.local/bin/:$PATH >> ~/.bashrc
 
-$ pipsi install cookiecutter
+    $ pipsi install cookiecutter
 
-$ cookiecutter https://github.com/pydanny/cookiecutter-django.git
+    $ cookiecutter https://github.com/pydanny/cookiecutter-django.git
 
-$ cd tests/
+    $ cd tests/
 
 
 
 Run tests
 ---------
 
-$ pipsi install hitch
+Run tests::
 
-$ hitch init
+    $ pipsi install hitch
 
-$ hitch test register-and-log-in.test
+    $ hitch init
+
+    $ hitch test register-and-log-in.test
